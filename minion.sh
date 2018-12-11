@@ -1,3 +1,4 @@
+#!/bin/bash
 
 cat <<EOF >/etc/yum.repos.d/salt.repo
 [saltstack-repo]
