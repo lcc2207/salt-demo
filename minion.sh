@@ -10,6 +10,8 @@ gpgkey=https://repo.saltstack.com/yum/redhat/$releasever/$basearch/latest/SALTST
        https://repo.saltstack.com/yum/redhat/$releasever/$basearch/latest/base/RPM-GPG-KEY-CentOS-7
 EOF
 
+yum install salt-minion
+
 cat <<EOF >/etc/salt/minion
 master: $salt_master
 EOF
