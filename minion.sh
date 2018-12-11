@@ -15,3 +15,5 @@ yum install salt-minion -y
 cat <<EOF >/etc/salt/minion
 master: $salt_master
 EOF
+
+systemctl start salt-minion
